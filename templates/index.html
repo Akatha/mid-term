@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+            I'm a passionate <strong>Web & Mobile Application Developer</strong> dedicated to building
+            high-performance, user-friendly applications. With expertise in modern frameworks like
+            <strong>React, Vue.js, Flutter, and Django</strong>, I specialize in creating seamless, responsive,
+            and engaging digital experiences.
+        </p>
+        <p>
+            Whether it's a dynamic web platform or a feature-rich mobile app, I focus on
+            <strong>clean code, intuitive UI/UX, and scalable architecture</strong>.
+        </p>
+        <a href="{{ url_for('about') }}" class="btn">Learn More</a>
+    </div>
+
+    <div class="slider">
+        <img src="{{ url_for('static', filename='images/slide1.jpg') }}" alt="Web Development Projects">
+        <img src="{{ url_for('static', filename='images/slide2.jpg') }}" alt="Mobile App Designs">
+        <img src="{{ url_for('static', filename='images/slide3.jpg') }}" alt="Full-Stack Solutions">
+    </div>
+</section>
+{% endblock %}

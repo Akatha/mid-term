@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-img">
+        <p>Hi, I'm Akash Kumar Thakur. I'm a web developer with a passion for creating beautiful and functional
+            websites. I
+            specialize in front-end development using HTML, CSS, and JavaScript, and I also have experience with
+            back-end technologies like Flask and SQLite.</p>
+        <p>When I'm not coding, I enjoy reading books, watching movies, and playing except that i am learning new
+            technology like AL/Ml and have good comand in flutter to develop a beautyfull mobile applications.</p>
+        <p>My mission is to create innovative and user-friendly web applications and mobile applications that make a
+            difference.</p>
+        <ul>
+            <li>My address is Chabeil</li>
+            <li>My phone number is 9814716543</li>
+            <li>My email is <a href="mailto:akashkumarthakur@gmail">akashthakur033550@gmail.com</a>
+        </ul>
+    </div>
+</section>
+{% endblock %}
